@@ -3,4 +3,4 @@
 - React
 - JavaScript
 - CSS
-- Font Awosome
+- Font Awesome
