@@ -8,8 +8,8 @@ export const Todo = () => {
     <div className="Todo">
       <p>got to school</p>
       <div>
-        <FontAwesomeIcon icon={faPenToSquare} />
-        <FontAwesomeIcon icon={faTrash} />
+        <FontAwesomeIcon className="pen" icon={faPenToSquare} />
+        <FontAwesomeIcon className="trash" icon={faTrash} />
       </div>
     </div>
   );
