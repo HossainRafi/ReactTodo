@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
-export const TodoForm = () => {
+export const TodoForm = ({ addTodo }) => {
+  const [value, setValue] = useState("");
 
   return (
     <form className="TodoForm">
       <input
         type="text"
+        onChange={(e) => setValue(e.target.value)}
         className="todo-input"
         placeholder="Write Your Todays Task"
       />
