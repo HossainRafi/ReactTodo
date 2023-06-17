@@ -1,7 +1,17 @@
 import React from "react";
 
-const TodoForm = () => {
-  return <div>TodoForm</div>;
-};
+export const TodoForm = () => {
 
-export default TodoForm;
+  return (
+    <form className="TodoForm">
+      <input
+        type="text"
+        className="todo-input"
+        placeholder="Write Your Todays Task"
+      />
+      <button type="submit" className="todo-btn">
+        Add Task
+      </button>
+    </form>
+  );
+};
