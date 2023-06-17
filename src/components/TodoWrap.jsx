@@ -15,6 +15,7 @@ const TodoWrap = () => {
 
   return (
     <div className="TodoWrapper">
+      <h1>Add Task & Do It !</h1>
       <TodoForm addTodo={addTodo} />
       {todos.map((todo, index) => (
         <Todo task={todo} key={index} />
