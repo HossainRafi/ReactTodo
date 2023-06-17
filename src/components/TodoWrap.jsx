@@ -12,10 +12,13 @@ const TodoWrap = () => {
       { id: uuidv4(), task: todo, completed: false, isEditing: false },
     ]);
   };
+
   return (
     <div className="TodoWrapper">
       <TodoForm addTodo={addTodo} />
-      <Todo />
+      {todos.map((todo, index) => (
+        <Todo task={todo} key={index} />
+      ))}
     </div>
   );
 };
